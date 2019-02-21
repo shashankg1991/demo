@@ -10,5 +10,80 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "order":{
+    "OrderId" : 748,
+    "MerchantReference" : "MerchantUniqueReference",
+    "TotalPrice" : 725.55,
+    "Country" : "SE",
+    "Currency" : "SEK",
+    "SignupForNewsletter" : true,
+    "IdentityVerification" : {
+        "RequireIdentityVerification" : false,
+        "IdentityVerified" : false
+    },
+    "Customer" : {
+        "FirstName" : "FirstName",
+        "LastName" : "LastName",
+        "PersonalNumber" : "111111-1111",
+        "Email" : "email@domain.com",
+        "MobileNumber" : "+46101010101",
+        "JuridicalType" : "Physical"
+    },
+    "BillingAddress" : {
+        "CompanyName" : null,
+        "FirstName" : "First",
+        "LastName" : "Last",
+        "CareOf" : "",
+        "Street" : "Street",
+        "PostalCode" : "12345",
+        "City" : "City"
+    },
+    "ShippingAddress" : {
+        "CompanyName" : null,
+        "FirstName" : "First",
+        "LastName" : "Last",
+        "CareOf" : "",
+        "Street" : "Street",
+        "PostalCode" : "12345",
+        "City" : "City"
+    },
+    "OrderItemActions" : [{
+            "MerchantReference" : "RedHat",
+            "Description" : "Red hat original product",
+            "Quantity" : 3,
+            "PricePerItemIncVat" : 375.55,
+            "PricePerItemExVat" : 300.35,
+            "Type" : "Product",
+            "ActionType" : "Reserve",
+            "PaymentTransactionId" : 1234,
+            "MetaData" : {
+                "HasRisk" : false
+            }
+        }, {
+            "MerchantReference" : "SHIPPING_FEE_0_REF",
+            "Description" : "ShippingFee",
+            "Quantity" : 1,
+            "PricePerItemIncVat" : 123.45,
+            "PricePerItemExVat" : 98.76,
+            "Type" : "Shipping",
+            "ActionType" : "Reserve",
+            "PaymentTransactionId" : 1234,
+            "MetaData" : {
+                "ShippingMethodMerchantReference" : "SHIPPING_METHOD_1_REF",
+                "ShippingMethodSecondaryOptionMerchantReference" : "SHIPPING_SECONDARY_2_REF",
+                "ShippingMethodAccessCode" : "1234"
+            }
+        }
+    ],
+    "PaymentTransactions" : [{
+            "PaymentTransactionId" : 1234,
+            "Type" : "Preauthorization",
+            "Amount" : 1126.65,
+            "Currency" : "SEK",
+            "Status" : "Success",
+            "PaymentMethodName" : "CREDITCARDS"
+        }
+    ]
+}
 }
