@@ -1,10 +1,15 @@
 {  
-   "order":{  
-      "OrderId":748,
-      "MerchantReference":"MerchantUniqueReference",
-      "TotalPrice":725.55,
-      "Country":"SE",
-      "Currency":"SEK",
-      "SignupForNewsletter":true,
+   "paymentTransaction":{  
+    "PaymentTransactionId" : 12345,
+    "OrderId" : 67890,
+    "Type" : "Capture",
+    "Amount" : 550,
+    "Status" : "Success",
+    "PaymentMethodName" : "CREDITCARDS",
+    "PaymentMethodSubtypeCode" : "MASTERCARD",
+    "ProviderTransactionId" : "8a82944a5a8ee61d015aa44c44787ead",
+    "ProviderResultCode" : "000.100.110",
+    "ProviderResultDescription" : "Request successfully processed in 'Merchant in Integration Test Mode'",
+    "Timestamp" : "2016-03-03T11:43:05.567"
     }
 }
